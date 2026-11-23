@@ -11,13 +11,13 @@ st.write("Add people, expenses and select who shares each expense.")
 
 st.header("1. Add People")
 
-num_people = st.number_input("Number of people", min_value=1, max_value=50, value=5, step=1)
+num_people = st.number_input("Number of people", min_value=1, max_value=50, value=3, step=1)
 
 names = []
 for i in range(int(num_people)):
     name = st.text_input(
         f"Person {i + 1}",
-        value=["Nitesh", "Chetu", "Ajay", "Gaurav", "Abhay"][i] if i < 5 else "",
+        value=["Gaurav", "Chetu", "Prince"][i] if i < 3 else "",
         key=f"name_{i}"
     ).strip()
     names.append(name)
