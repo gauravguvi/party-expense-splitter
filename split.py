@@ -17,7 +17,7 @@ names = []
 for i in range(int(num_people)):
     name = st.text_input(
         f"Person {i + 1}",
-        value=["Gaurav", "Chetu", "Prince"][i] if i < 3 else "",
+        value=["Gaurav", "Prince", "Chetan"][i] if i < 3 else "",
         key=f"name_{i}"
     ).strip()
     names.append(name)
